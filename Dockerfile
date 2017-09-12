@@ -5,7 +5,7 @@ FROM alpine:latest
 RUN apk --update add python3 py-pip py-gunicorn py-psycopg2 bash 
 
 # Install ImageMagick
-#RUN apk add imagemagick
+RUN apk add imagemagick
 
 # Install dependencies
 ADD ./python-getting-started/requirements.txt /tmp/requirements.txt
